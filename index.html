@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc LDL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Calculadora de Colesterol LDL</h1>
+
+    <div>
+        <div class="form-group">
+            <label for="colesterolTotal">Colesterol Total (mg/dL):</label>
+            <input type="number" id="colesterolTotal" placeholder="Digite o valor do colesterol total">
+        </div>
+
+        <div class="form-group">
+            <label for="colesterolHDL">Colesterol HDL (mg/dL):</label>
+            <input type="number" id="colesterolHDL" placeholder="Digite o valor do colesterol HDL">
+        </div>
+
+        <div class="form-group">
+            <label for="triglicerides">Triglicerídeos (mg/dL):</label>
+            <input type="number" id="triglicerides" placeholder="Digite o valor dos triglicerídeos">
+        </div>
+
+        <button onclick="calcularLDL()">Calcular LDL</button>
+
+        <div id="resultado" class="result"></div>
+        <div id="erro" class="error"></div>
+        <br>
+
+        <!-- Botão de copiar com feedback de check -->
+        <button id="copiarLDLCheck" onclick="copiarLDL()" style="display: none;">Copiar<span id="checkIcon"
+                class="check-icon">✔</span>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
