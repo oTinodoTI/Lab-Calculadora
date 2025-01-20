@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxa Filtração Glomerular</title>
+    <link rel="stylesheet" href="../static/global.css">
+</head>
+
+<body>
+    <h1>Calcular Taxa de Filtração Glomerular</h1>
+    <h2>(Fórmula Cockcroft-Gault)</h2>
+
+    <div>
+        <div class="form-group">
+            <label for="sexo">Sexo:</label>
+            <select id="sexo">
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" placeholder="Digite a idade">
+        </div>
+
+        <div class="form-group">
+            <label for="peso">Peso (Kg):</label>
+            <input type="number" id="peso" placeholder="Digite o peso">
+        </div>
+
+        <div class="form-group">
+            <label for="creatinina">Creatinina Serica (mg/dL):</label>
+            <input type="number" id="creatinina" placeholder="Digite o valor da creatinina">
+        </div>
+
+        <button onclick="calcularTFG()">Calcular TFG</button>
+
+        <div id="resultadoTFG" class="result"></div>
+        <div id="erroTFG" class="error"></div>
+
+        <br><br>
+
+        <button onclick="window.location.href = '/';">Voltar</button>
+
+        <script src="../static/calctTFG.js"></script>
+
+    </div>
+</body>
+
+</html>
