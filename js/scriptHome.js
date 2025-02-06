@@ -1,7 +1,7 @@
 const routes = {
-    calcLDL: 'calcLDL.html',
-    calcIMC: 'calcIMC.html',
-    calcTFG: 'calcTFG.html',
+    calcLDL: 'pages/calcLDL.html',
+    calcIMC: 'pages/calcIMC.html',
+    calcTFG: 'pages/calcTFG.html',
 };
 
 function redirect(routeKey) {
